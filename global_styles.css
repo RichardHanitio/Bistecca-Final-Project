@@ -1,0 +1,16 @@
+:root {
+    --primary-color : #265A5B;
+    --accent-color-1 : #BB946E;
+    --accent-color-2 : #2B3A41;
+    --neutral-color : #FFFFFF;
+
+    --heading-font-1 : 34px;
+    --heading-font-2 : 28px;
+    --heading-font-3 : 24px;
+    --heading-font-4 : 22px;
+    --body-font : 18px;
+
+    --title-font-family : "Inria Serif", serif;
+    --body-font-family : "Roboto", sans-serif;
+}
+
