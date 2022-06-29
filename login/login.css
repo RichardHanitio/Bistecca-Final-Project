@@ -1,7 +1,6 @@
 @import url(../global_styles.css);
 
 body {
-  font-family: Arial;
   color: white;
 }
 
@@ -31,10 +30,6 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-}
-
-.centered p{
-  
 }
 
 .centered1 {
@@ -69,7 +64,6 @@ form ul{
 }
 
 #check label{
-  font-size: 14px;
   padding: 0 5px;
 }
 
@@ -86,7 +80,6 @@ form ul li{
 }
 
 form ul li label{
-  font-size: 17px;
   color: white;
   margin-bottom: 10px;
   margin-top: 10px;
@@ -105,7 +98,6 @@ form ul li button{
   height: 40px;
   color: white;
   font-weight: bold;
-  font-size: 20px;
   background-color: #BB946E;
   border: none;
   margin-top: 20px;
@@ -119,5 +111,4 @@ form ul li button:hover{
 
 #wrong{
   color: red;
-  font-size: 12px;
 }
