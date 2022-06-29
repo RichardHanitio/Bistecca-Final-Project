@@ -1,16 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:wght@300;400;700&display=swap');
+
 :root {
     --primary-color : #265A5B;
     --accent-color-1 : #BB946E;
     --accent-color-2 : #2B3A41;
+    --accent-color-3 : #1E292E;
     --neutral-color : #FFFFFF;
 
+    --hero-font : 52px;
     --heading-font-1 : 34px;
     --heading-font-2 : 28px;
     --heading-font-3 : 24px;
-    --heading-font-4 : 22px;
+    --heading-font-4 : 20px;
     --body-font : 18px;
 
     --title-font-family : "Inria Serif", serif;
     --body-font-family : "Roboto", sans-serif;
+    
+    --font-letter-spacing : 1px;
 }
 
+h1 {
+    font-size : var(--heading-font-1);
+}
+h2 {
+    font-size : var(--heading-font-2);
+}
+h3 {
+    font-size : var(--heading-font-3);
+}
+h4 {
+    font-size : var(--heading-font-4);
+}
+div {
+    font-size : var(--body-font-family);
+}
+
+* {
+    margin : 0;
+    padding : 0;
+    box-sizing : border-box;
+}
+
+li {
+    list-style-type: none;
+}
+
+.btn {
+    background-color : var(--accent-color-1);
+    border : none;
+    color : var(--neutral-color);
+    width : 130px;
+    height : 40px;
+    cursor : pointer;
+}
+
+a {
+    color : white;
+    text-decoration : none;
+    font-weight : 500;
+}
