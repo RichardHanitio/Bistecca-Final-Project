@@ -1,0 +1,106 @@
+@import url('../global_styles.css');
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: 0;
+    box-sizing: border-box;
+    font-family: var(--body-font-family);
+}
+
+body{
+    background-color: #2B3A41;
+}
+
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    font-family: var(--title-font-family);
+    font-size: var(--heading-font-1);
+    background-image: url("BackgroundReserve.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: white;
+    font-weight: bold;
+}
+
+.banner::after{
+    border: solid white;
+    background-color: aqua;
+}
+
+
+.reservation-container{
+    display: flex;
+    width: 100%;
+    height: 50vh;
+    justify-content: center;
+}
+
+.reservation-info{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1rem 10rem;
+    justify-content: center;
+    align-items: center;
+    grid-template-areas: 
+    "a b"
+    "c d"
+    "button button"; 
+
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-info{
+    color: white;
+    font-size: var(--heading-font-3);
+    margin-bottom: 1rem;
+}
+
+input{
+    width: 10rem;
+    height: 2rem;
+    padding: 0 1rem;
+    background-color: #265A5B;
+    color: white;
+    border: none;
+}
+
+select{
+    width: 10rem;
+    height: 2rem;
+    padding: 0 1rem;
+    background-color: #265A5B;
+    color: white;
+    border: none;
+}
+
+.card.a { grid-area: a; }
+.card.b { grid-area: b; }
+.card.c { grid-area: c; }
+.card.d { grid-area: d; }
+
+button { 
+    grid-area: button; 
+    height: 3rem;
+    margin-top: 1.5rem;
+    background-color: #BB946E;
+    color: white;
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color:#b79d84 ;
+}
