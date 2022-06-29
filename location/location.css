@@ -1,0 +1,75 @@
+body{
+    margin: 0px;
+    text-align: center;
+    color: white;
+}
+
+.img1{
+    background-image: url(../images/location.png);
+    height: 379px;
+}
+
+.location{
+    background-color: #2B3A41;
+}
+
+.location p{
+    margin: 0px;
+    padding: 50px;
+}
+
+.centered{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.grid-item1 {
+    background-image: url(../images/location.png);
+    padding: 100px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.grid-item2 {
+    background-image: url(../images/location1.png);
+    padding: 100px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.dinner{
+    background-image: url(../images/location.png);
+    height: 379px;
+}
+
+.centered1{
+    position: absolute;
+    top: 185%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+form ul li button{
+    height: 40px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #BB946E;
+    border: none;
+    margin-top: 10px;
+    border-radius: 6px;
+}
+
+form ul li button:hover{
+cursor: pointer;
+background-color: #000046;
+}
