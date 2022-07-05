@@ -6,14 +6,15 @@
     --accent-color-1 : #BB946E;
     --accent-color-2 : #2B3A41;
     --accent-color-3 : #1E292E;
+    --accent-color-4 : #1B3F40;
     --neutral-color : #FFFFFF;
 
     --hero-font : 52px;
     --heading-font-1 : 34px;
     --heading-font-2 : 28px;
     --heading-font-3 : 24px;
-    --heading-font-4 : 20px;
-    --body-font : 18px;
+    --heading-font-4 : 18px;
+    --body-font : 16px;
 
     --title-font-family : "Inria Serif", serif;
     --body-font-family : "Roboto", sans-serif;
@@ -22,6 +23,7 @@
 }
 
 h1 {
+    font-family : var(--title-font-family);
     font-size : var(--heading-font-1);
 }
 h2 {
@@ -34,7 +36,11 @@ h4 {
     font-size : var(--heading-font-4);
 }
 div, p {
-    font-size : var(--body-font-family);
+    font-size : var(--body-font);
+    color : white;
+    font-family : var(--body-font-family);
+    letter-spacing : var(--font-letter-spacing);
+    font-weight : 300;
 }
 
 * {
@@ -60,4 +66,18 @@ a {
     color : white;
     text-decoration : none;
     font-weight : 500;
+}
+
+.title {
+    font-family: var(--title-font-family);
+    color: var(--neutral-color);
+    font-size: var(--heading-font-1);
+    text-align : center;
+}
+
+.desc {
+    font-family: var(--body-font-family);
+    color: var(--neutral-color);
+    font-weight: 300;
+    letter-spacing: var(--font-letter-spacing);
 }
