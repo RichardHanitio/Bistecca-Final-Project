@@ -5,8 +5,8 @@ nav {
     background-color: var(--primary-color);
     width: 100vw;
     min-height: 80px;
-    position: fixed;
-    z-index: 1;
+    position: sticky;
+    top: 0%;
 }
 
 section {
