@@ -1,3 +1,7 @@
+<?php 
+  session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,16 +26,22 @@
       <h2>Login</h2>
       <p>Welcome back! Please enter your details</p>
 
-      <form action="/index.html" id="form">
+      <form action="log.php" id="form" method="POST" onsubmit="return validate()">
         <ul>
             <li>
                 <label for="">Username</label>
-                <input type="text" id="username">
+                <input type="text" id="username" name="username" required>
             </li>
             <li>
                 <label for="">Password</label>
-                <input type="password" id="password">
+                <input type="password" id="password" name="password" required>
+                <?php 
+                  if($_SESSION["UserNotFound"])
+                  echo '<div id="wrong">username or password is wrong !</div>';
+                ?>
             </li>
+
+
             <li id="wrong">
 
             </li>

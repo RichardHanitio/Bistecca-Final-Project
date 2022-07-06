@@ -111,4 +111,10 @@ form ul li button:hover{
 
 #wrong{
   color: red;
+  font-size: 8px;
+}
+
+.wrong{
+  color: red;
+  
 }

@@ -21,25 +21,25 @@
       <h2>Sign Up</h2>
       <p>Sign up to get reservation access, and get weekly discounts!</p>
 
-      <form action="/index.html" id="form">
+      <form action="regis.php" id="form" method="POST">
         <ul>
             <li>
                 <label for="">Email</label>
-                <input type="text" id="username">
+                <input type="text" id="username" name="email">
             </li>
             <li>
                 <label for="">Username</label>
-                <input type="text" id="username">
+                <input type="text" id="username" name="username">
                 <div class="meter" id="userInvalid"></div>
             </li>
             <li>
                 <label for="">Phone Number</label>
-                <input type="text" id="phone">
+                <input type="text" id="phone" name="phone_number">
                 <div class="meter" id="passNotMatch"></div>
             </li>
             <li>
                 <label for="">Password</label>
-                <input type="password" id="password">
+                <input type="password" id="password" name="password">
                 <div class="meter" id="meter"></div>
             </li>
             <li>
