@@ -37,14 +37,12 @@ h1{
     text-align: center;
     margin: 1rem 0;
     font-family: var(--title-font-family);
-    font-size: var(--heading-font-1);
 }
 
 h2{
     text-align: center;
     margin: 1rem 0;
     font-family: var(--title-font-family);
-    font-size: var(--heading-font-2);
 }
 
 .information-container{
@@ -54,7 +52,7 @@ h2{
     align-items: center;
     padding: 1rem 2rem;
     background-color: #1E292E;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 .card{
@@ -65,9 +63,6 @@ h2{
     font-size: var(--body-font);
 }
 
-.icon-info{
-
-}
 
 .second-container{
     display: flex;
@@ -80,6 +75,14 @@ h2{
     height: 50vh;
     background-color: #1E292E;
     margin-right: 3rem;
+    display : flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-inner-container {
+    height : 90%;
+    width : 85%;
 }
 
 .right{
@@ -99,7 +102,7 @@ h2{
     width: 100%;
     font-family: 'Inria Sans', sans-serif;
     font-size: var(--body-font);
-    margin: 1.5rem 2rem;
+    margin: 1.5rem 0;
     font-weight: 400;
 }
 

@@ -55,7 +55,7 @@
             </div>
             <div class="card c">
                 <img src="Guest.png" alt="">
-                <div class="icon-info">Guest</div>
+                <div class="icon-info">Num of Guest</div>
                 <input type="number" name="reservation_guest" id="">
             </div>
             <div class="card d">
@@ -74,7 +74,7 @@
                     <option value="South Tampa">South Tampa</option>
                 </select>
             </div>
-            <button type="submit">RESERVE</button>
+            <button type="submit" class="btn btn-reserve">RESERVE</button>
         </form> 
     </div>
      

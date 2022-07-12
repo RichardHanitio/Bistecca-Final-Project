@@ -1,12 +1,79 @@
 @import "global_styles.css";
 
+/* pop up */
+.pop-up {
+    position : fixed;
+    height : 100vh;
+    width : 100vw;
+    z-index : 2;
+    display : none;
+}
+
+.pop-up::before {
+    content : "";
+    opacity : .7;
+    height : 100%;
+    width : 100%;
+    background-color : black;
+    position : absolute;
+}
+
+.pop-up-container {
+    background-color : var(--primary-color);
+    position : absolute;
+    height : 550px;
+    width : 500px;
+    top : 50%;
+    left : 50%;
+    transform : translate(-50%, -50%);
+    border-radius : 10px;
+    display : flex;
+    align-items : center;
+    justify-content : center;
+}
+
+.pop-up-inner-container {
+    width : 80%;
+    height : 85%;
+    display : flex;
+    flex-direction : column;
+    align-items : center;
+    justify-content : space-between;
+}
+
+.pop-up-close {
+    align-self : flex-start;
+    cursor : pointer;
+}
+
+.pop-up-img {
+    width : 50%;
+}
+
+.pop-up-title {
+    font-size : var(--heading-font-3);
+    font-weight : 700;
+}
+
+.pop-up-desc {
+    text-align: center;
+}
+
+.pop-up-btn {
+    font-size : var(--body-font);
+    width : 100%;
+}
+
+
+
 /* navbar */
 nav {
     background-color: var(--primary-color);
-    width: 100vw;
     min-height: 80px;
     position: sticky;
     top: 0%;
+    z-index : 1;
+    box-shadow: 0 3px 10px var(--accent-color-3);
 }
 
 section {
@@ -28,7 +95,6 @@ section {
     flex-basis: 10%;
     display: flex;
     align-items: center;
-    /* justify-content : center; */
 }
 
 .navbar-logo img {
@@ -68,8 +134,7 @@ section {
 
 /* header */
 header {
-    min-height: 700px;
-    /* width : 100vw; */
+    min-height: 550px;
     position: relative;
 }
 
@@ -120,6 +185,7 @@ main {
 /* who */
 .who-section {
     min-height: 500px;
+    margin-bottom : 100px;
 }
 
 .who-container {
@@ -169,9 +235,13 @@ main {
 }
 
 .special-menu-container {
-    max-width: 95%;
+    max-width: 90%;
     min-height: 260px;
     display: flex;
+}
+
+.special-menu-desc {
+    text-align : justify;
 }
 
 .special-menu-image {
@@ -214,10 +284,10 @@ main {
     margin-top : 50px;
 }
 
-.special-order .btn {
+.special-order-btn {
     font-size : var(--heading-font-3);
-    width : 200px;
-    height : 70px;
+    width : 180px;
+    height : 60px;
 }
 
 /* meet */
@@ -397,7 +467,6 @@ footer {
 .footer-sosmed div:last-child svg {
     width : 30px;
 }
-
 
 .footer-menu,
 .footer-support 

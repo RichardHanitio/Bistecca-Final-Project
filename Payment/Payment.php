@@ -60,22 +60,24 @@
         
         <div class="second-container">
             <div class="left">
-                <h2>User Information</h2>
-                <div class="text">Name         : Ricky</div>
-                <div class="text">Email         : Rickycen123@gmail.com</div>
-                <div class="text">Phone Number  : 085276759281</div>
+                <div class="left-inner-container">
+                    <h2>User Information</h2>
+                    <div class="text">Name : Ricky</div>
+                    <div class="text">Email : Rickycen123@gmail.com</div>
+                    <div class="text">Phone Number : 085276759281</div>
+                </div>
             </div>
 
             <div class="right">
                 <h2>Choose Your Payment Method</h2>
                 <div class="pay-method">
                     <button class="card-pay">
-                        <img src="ovo.png" alt="">
+                        <img src="/images/ovo.png" alt="">
                         <div class="pay-info">OVO</div>
                     </button>
             
                     <button class="card-pay">
-                        <img src="gopay.png" alt="">
+                        <img src="/images/gopay.png" alt="">
                         <div class="pay-info">gopay</div>
                     </button>
                 </div>

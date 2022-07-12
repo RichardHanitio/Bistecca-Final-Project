@@ -10,9 +10,9 @@
     --neutral-color : #FFFFFF;
 
     --hero-font : 52px;
-    --heading-font-1 : 34px;
-    --heading-font-2 : 28px;
-    --heading-font-3 : 24px;
+    --heading-font-1 : 30px;
+    --heading-font-2 : 24px;
+    --heading-font-3 : 22px;
     --heading-font-4 : 18px;
     --body-font : 16px;
 
@@ -60,6 +60,10 @@ li {
     width : 130px;
     height : 40px;
     cursor : pointer;
+}
+
+.btn:hover {
+    background-color : #000046;
 }
 
 a {
