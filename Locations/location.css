@@ -2,28 +2,27 @@ body{
     margin: 0px;
     text-align: center;
     color: white;
+    background-color: #2B3A41;
 }
 
 .img1{
     background-image: url(../images/location.png);
+    width: 100%;
     height: 379px;
 }
 
-.location{
-    background-color: #2B3A41;
-}
-
 .location p{
-    margin: 0px;
     padding: 50px;
 }
 
 .centered{
-    position: absolute;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: relative;
+    top: 50%;
     text-align: center;
+}
+
+.centered h2{
+    margin-top: 0px;
 }
 
 .grid-container {
@@ -31,30 +30,54 @@ body{
     grid-template-columns: auto auto auto;
 }
 
-.grid-item1 {
-    background-image: url(../images/location.png);
-    padding: 100px;
-    font-size: 30px;
+
+.container {
+    position: relative;
+    width: 100%;
+}
+  
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
     text-align: center;
 }
 
-.grid-item2 {
-    background-image: url(../images/location1.png);
-    padding: 100px;
-    font-size: 30px;
-    text-align: center;
+.container:hover .image {
+    opacity: 0.3;
 }
 
-.dinner{
-    background-image: url(../images/location.png);
-    height: 379px;
+.container:hover .middle {
+    opacity: 1;
 }
 
 .centered1{
-    position: absolute;
-    top: 185%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: relative;
+    top:50%;
+    text-align: center;
+}
+
+.text {
+    background-color: #04AA6D;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+
+.text1{
     text-align: center;
 }
 
@@ -67,11 +90,14 @@ form ul li button{
     border: none;
     margin-top: 10px;
     border-radius: 6px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 form ul li button:hover{
-cursor: pointer;
-background-color: #000046;
+    cursor: pointer;
+    background-color: #000046;
 }
 
 form{
