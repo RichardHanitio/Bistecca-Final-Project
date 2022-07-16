@@ -118,14 +118,8 @@
             <div class="text1">
                 <h2>Ready For Dinner?</h2>
             </div>
+            <button type="submit" class="submit-button">See The Menu</button>
             
-            <form action="">
-                <ul>
-                    <li>
-                        <button type="submit">See The Menu</button>
-                    </li>
-                </ul>
-            </form>
         </div>
     </div>
 
