@@ -120,17 +120,32 @@ section {
     font-size: var(--body-font-size);
 }
 
-.navbar-reserve {
+.navbar-buttons {
     display: flex;
     flex-basis: 15%;
     align-items: center;
     justify-content: center;
 }
 
-.navbar-reserve-btn {
+.navbar-reserve-btn, .navbar-login-btn {
     font-size: var(--body-font-size);
     letter-spacing: var(--font-letter-spacing);
 }
+
+.navbar-reserve-btn {
+    margin-right : 20px;
+}
+
+.navbar-login-btn {
+    background : none;
+    border : 1px solid var(--accent-color-1);
+}
+
+.navbar-login-btn:hover {
+    background-color : var(--accent-color-1);
+    border : none;
+}
+
 
 /* header */
 header {

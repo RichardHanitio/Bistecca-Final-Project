@@ -1,5 +1,5 @@
 <?php 
     session_start();
-    $conn = mysqli_connect("localhost", "root", "", "db_restoran");
+    $conn = mysqli_connect("localhost", "root", "", "restoran");
 
 ?>

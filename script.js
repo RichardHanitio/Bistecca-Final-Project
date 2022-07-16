@@ -3,7 +3,7 @@ let popup = document.querySelector(".pop-up");
 let closePopup = document.querySelector(".pop-up-close");
 
 btnReservation.addEventListener("click", () => {
-    popup.style.display = "block";
+    popup.style.display = "flex";
 })
 
 closePopup.addEventListener("click", () => {

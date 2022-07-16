@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="styles.css" />
     <title>Bistecca | Home</title>
 </head>
+
 <body>
     <div class="pop-up">
         <div class="pop-up-container">
@@ -15,13 +17,13 @@
                     <path d="M17.25 17.25 6.75 6.75"></path>
                     <path d="m17.25 6.75-10.5 10.5"></path>
                 </svg>
-                <img src="./images/man-grill-steak.png" class="pop-up-img"/>
+                <img src="./images/man-grill-steak.png" class="pop-up-img" />
                 <div class="title pop-up-title">Sign Up to Make Reservations!</div>
                 <div class="desc pop-up-desc">By signing up, you can make reservations, get daily discount, special menus, and much more!</div>
                 <input type="button" class="btn pop-up-btn" value="Sign Up Now" />
             </div>
         </div>
-    </div>    
+    </div>
 
     <nav>
         <div class="container navbar-container">
@@ -32,16 +34,13 @@
                 <ul>
                     <li><a href="/index.php">Home</a></li>
                     <li><a href="#">Gallery</a></li>
-                    <li><a href="#">Locations</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="/Locations/location.php">Locations</a></li>
+                    <li><a href="/About/about.php">About</a></li>
                 </ul>
             </div>
-            <div class="navbar-reserve">
-                <input
-                    type="button"
-                    value="Reservations"
-                    class="btn navbar-reserve-btn"
-                />
+            <div class="navbar-buttons">
+                <input type="button" value="Reservations" class="btn navbar-reserve-btn" />
+                <input type="button" value="Login" class="btn navbar-login-btn" onclick="window.location.href='/Login/login.php'"/>
             </div>
         </div>
     </nav>
@@ -52,11 +51,7 @@
                 The place where texture meets flavor
             </h1>
             <div class="header-button">
-                <input
-                    type="button"
-                    value="Order Now"
-                    class="btn header-button-btn"
-                />
+                <input type="button" value="Order Now" class="btn header-button-btn" />
             </div>
         </div>
     </header>
@@ -238,9 +233,7 @@
                             <img src="images/customer1.png" />
                         </div>
                         <div class="review-customer-caption">
-                            <div
-                                class="review-customer-caption-double-quote"
-                            >
+                            <div class="review-customer-caption-double-quote">
                                 <img src="/images/double-quotes.png" />
                             </div>
                             <div class="review-customer-caption-comment">
@@ -259,9 +252,7 @@
                             <img src="images/customer2.png" />
                         </div>
                         <div class="review-customer-caption">
-                            <div
-                                class="review-customer-caption-double-quote"
-                            >
+                            <div class="review-customer-caption-double-quote">
                                 <img src="/images/double-quotes.png" />
                             </div>
                             <div class="review-customer-caption-comment">
@@ -279,9 +270,7 @@
                             <img src="images/customer3.png" />
                         </div>
                         <div class="review-customer-caption">
-                            <div
-                                class="review-customer-caption-double-quote"
-                            >
+                            <div class="review-customer-caption-double-quote">
                                 <img src="/images/double-quotes.png" />
                             </div>
                             <div class="review-customer-caption-comment">
@@ -312,57 +301,17 @@
                     <div class="footer-sosmed">
                         <div class="footer-sosmed-title">Social Media : </div>
                         <div>
-                            <svg
-                                width="30"
-                                height="30"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
-                                viewBox="0 0 24 24"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <path
-                                    d="M16 4H8a4 4 0 0 0-4 4v8a4 4 0 0 0 4 4h8a4 4 0 0 0 4-4V8a4 4 0 0 0-4-4Z"
-                                ></path>
-                                <path
-                                    d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"
-                                ></path>
+                            <svg width="30" height="30" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16 4H8a4 4 0 0 0-4 4v8a4 4 0 0 0 4 4h8a4 4 0 0 0 4-4V8a4 4 0 0 0-4-4Z"></path>
+                                <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"></path>
                                 <path d="M16.5 7.5v.001"></path>
                             </svg>
-                            <svg
-                                width="30"
-                                height="30"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
-                                viewBox="0 0 24 24"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <path
-                                    d="m3 20.999 1.65-3.8a9 9 0 1 1 3.4 2.9l-5.05.9"
-                                ></path>
-                                <path
-                                    d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 1 0-1 0v1Zm0 0a5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1"
-                                ></path>
+                            <svg width="30" height="30" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="m3 20.999 1.65-3.8a9 9 0 1 1 3.4 2.9l-5.05.9"></path>
+                                <path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 1 0-1 0v1Zm0 0a5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1"></path>
                             </svg>
-                            <svg
-                                width="30"
-                                height="30"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
-                                viewBox="0 0 24 24"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <path
-                                    d="M22 4.009c-1 .49-1.98.689-3 .99-1.121-1.265-2.783-1.335-4.38-.737S11.977 6.322 12 7.999v1c-3.245.083-6.135-1.395-8-4 0 0-4.182 7.433 4 11-1.872 1.247-3.739 2.088-6 2 3.308 1.803 6.913 2.423 10.034 1.517 3.58-1.04 6.522-3.723 7.651-7.742a13.84 13.84 0 0 0 .497-3.753c-.002-.249 1.51-2.772 1.818-4.013v.001Z"
-                                ></path>
+                            <svg width="30" height="30" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22 4.009c-1 .49-1.98.689-3 .99-1.121-1.265-2.783-1.335-4.38-.737S11.977 6.322 12 7.999v1c-3.245.083-6.135-1.395-8-4 0 0-4.182 7.433 4 11-1.872 1.247-3.739 2.088-6 2 3.308 1.803 6.913 2.423 10.034 1.517 3.58-1.04 6.522-3.723 7.651-7.742a13.84 13.84 0 0 0 .497-3.753c-.002-.249 1.51-2.772 1.818-4.013v.001Z"></path>
                             </svg>
                         </div>
                     </div>
@@ -407,6 +356,7 @@
         </div>
     </footer>
 </body>
+
 </html>
 
 <script src="/script.js" defer></script>

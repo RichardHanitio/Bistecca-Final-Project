@@ -27,7 +27,7 @@
                         <path d="m17.25 6.75-10.5 10.5"></path>
                     </svg>
                     <img
-                        src="./images/man-grill-steak.png"
+                        src="/images/man-grill-steak.png"
                         class="pop-up-img"
                     />
                     <div class="title pop-up-title">
@@ -306,3 +306,5 @@
         </footer>
     </body>
 </html>
+
+<script src="../script.js" defer></script>
