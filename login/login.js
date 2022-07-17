@@ -1,6 +1,3 @@
-console.log("hi");
-var hi = "test";
-
 function showPassword(){
     var check = document.getElementById("checkbox");
     var pass = document.getElementById("password");

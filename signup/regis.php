@@ -14,11 +14,10 @@
         
         // check email
         if(mysqli_num_rows($check_email) > 0) {
-            $_SESSION["error_message"] = "Email already exists";
             header("Location: signup.php?err=Your email is already taken");
         } else {
             $stmt = $conn->prepare($query);
-            $stmt->bind_param("ssssi", $email, $name, $phone_number, $password, $is_admin);
+            $stmt->bind_param("ssssi", $email, $name, $password, $phone_number, $is_admin);
             $stmt->execute();
             $_SESSION["name"] = $name;
             header("Location: ../index.php");
