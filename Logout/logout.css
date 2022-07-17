@@ -1,0 +1,14 @@
+@import "../global_styles.css";
+
+body {
+    background-color : var(--primary-color);
+}
+
+.logout-title {
+    margin-top : 50px;
+}
+
+.logout-desc {
+    margin-top : 20px;
+    text-align : center;
+}

@@ -161,7 +161,7 @@ header::before {
     position: absolute;
     width: 100%;
     height: 100%;
-    filter: brightness(50%);
+    filter: brightness(30%);
 }
 
 .header-container {
@@ -182,6 +182,11 @@ header::before {
     margin-bottom: 50px;
     font-size: var(--hero-font);
     text-align: center;
+}
+
+.header-desc {
+    font-size : var(--heading-font-4);
+    margin-top : 20px;
 }
 
 .header-button-btn {

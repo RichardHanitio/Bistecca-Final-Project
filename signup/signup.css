@@ -5,108 +5,138 @@ body {
 }
   
 .split {
-height: 100%;
-width: 50%;
-position: fixed;
-z-index: 1;
-top: 0;
-overflow-x: hidden;
-padding-top: 20px;
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
 }
 
 .left {
-left: 0;
-background-color: #2B3A41;
+  left: 0;
+  background-color: #2B3A41;
 }
 
 .right {
-right: 0;
-background-color: #265A5B;
+  right: 0;
+  background-color: #265A5B;
 }
 
 .centered {
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.centered img{
+  margin-bottom : 50px;
+}
+
+.centered p {
+  margin-bottom : 20px;
 }
 
 .centered1 {
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width : 70%;
 }
 
 .centered img {
-width: 150px;
+  width: 150px; 
+}
+
+.sign-up-title {
+  text-align : left;
+  margin-bottom : 20px;
+}
+
+.sign-up-desc {
+  margin-bottom : 15px;
 }
 
 form{
-width: 100%;
-height: 100%;
-display: flex;
-flex-direction: column;
-justify-content: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+form label:not(#checkbox){
+  margin-bottom : 10px;
 }
 
 form ul{
-display: flex;
-flex-direction: column;
-padding: 0px;
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
 }
 
 #check{
-display: flex;
-flex-direction: row;
-align-items: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 #check label{
-padding: 0 5px;
+  padding: 0 10px;
 }
 
 #check input{
-width: 15px;
-height: 15px;
+  width: 15px;
+  height: 15px;
 }
 
 form ul li{
-display: flex;
-flex-direction: column;
-list-style: none;
-padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin : 5px 0;
 }
 
 form ul li label{
-color: white;
+  color: white;
 }
 
 form ul li input{
-height: 30px;
-background-color: #e7e7e7;
-border: none;
-box-sizing: border-box;
-padding: 0 10px;
-border-radius: 6px;
+  height: 30px;
+  background-color: #e7e7e7;
+  border: none;
+  box-sizing: border-box;
+  padding: 0 10px;
+  border-radius: 6px;
 }
 
 form ul li button{
-height: 40px;
-color: white;
-font-weight: bold;
-background-color: #BB946E;
-border: none;
-margin-top: 10px;
-border-radius: 6px;
+  height: 40px;
+  color: white;
+  font-weight: bold;
+  background-color: #BB946E;
+  border: none;
+  margin-top: 10px;
+  border-radius: 6px;
 }
 
 form ul li button:hover{
-cursor: pointer;
-background-color: #000046;
+  cursor: pointer;
+  background-color: #000046;
 }
 
 #wrong{
-color: red;
+  color: red;
+}
+
+.error {
+  background-color : #A94442;
+  color : white;
+  padding : 10px;
+  border-radius : 5px;
+  font-weight : 700;
 }
