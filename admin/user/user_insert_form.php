@@ -5,35 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../form_style.css">
 </head>
 <body>
     <form action="user.php" id="form" method="POST">
-        <ul>
-            <li>
-                <label for="">Email</label>
-                <input type="text" id="username" name="email">
-            </li>
-            <li>
-                <label for="">Username</label>
-                <input type="text" id="username" name="username">
-            </li>
-            <li>
-                <label for="">Phone Number</label>
-                <input type="text" id="phone" name="phone_number">
-            </li>
-            <li>
-                <label for="">Password</label>
-                <input type="password" id="password" name="password">
+        <table>
+            <tr>
+                <td><label for="">Email</label></td>
+                <td><input type="text" id="username" name="email"></td>
+            </tr>
+            <tr>
+                <td><label for="">Name</label></td>
+                <td><input type="text" id="name" name="name"></td>
+            </tr>
+            <tr>
+                <td><label for="">Password</label></td>
+                <td><input type="text" id="password" name="password"></td>
 
-            </li>
-            <li>
-                <input type="hidden" name="isadmin" value="0">
-                <input type="hidden" name="tambahuser" value="yes">
-            </li>
-            <li>
-                <button type="submit">Sign Up</button>
-            </li>
-        </ul>
+            </tr>
+            <tr>
+                <td><label for="">Phone Number</label></td>
+                <td><input type="text" id="phone" name="phone_num"></td>
+            </tr>
+            <tr>
+                <td><label for="">Is Admin</label></td>
+                <td><input type="text" name="isadmin" value="0"></td>
+            </tr>
+            
+            <tr>
+                <td></td>
+                <td><input type="hidden" name="tambahuser" value="yes"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><button type="submit" class='btn'>INSERT</button></td>
+            </tr>
+        </table>
       </form>
 </body>
 </html>

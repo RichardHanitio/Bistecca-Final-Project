@@ -1,7 +1,6 @@
-<?php session_start(); ?>
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,700;1,400&family=Inria+Serif:wght@400;700&display=swap" rel="stylesheet">
     <title>Bistecca | Reservation</title>
 </head>
+
 <body>
     <div class="pop-up pop-up-payment">
         <div class="pop-up-container pop-up-container-payment" onclick>
@@ -23,10 +23,10 @@
                 <div class="title pop-up-title pop-up-title-payment">Choose Your Payment Method</div>
                 <div class="logos">
                     <div class="logo logo-ovo">
-                        <img src="../images/ovo.png" alt="ovo" onclick="window.location.href='../Notification/notification.php?notif=checkout'"/>
+                        <img src="../images/ovo.png" alt="ovo" onclick="window.location.href='../Notification/notification.php?notif=checkout'" />
                     </div>
                     <div class="logo logo-bca">
-                        <img src="../images/bca.png" alt="bca" onclick="window.location.href='../Notification/notification.php?notif=checkout'"/>
+                        <img src="../images/bca.png" alt="bca" onclick="window.location.href='../Notification/notification.php?notif=checkout'" />
                     </div>
                 </div>
             </div>
@@ -34,10 +34,10 @@
     </div>
 
     <?php require "../Navbar/navbar.php" ?>
-    
+
     <div class="banner">Reservation</div>
     <div class="reservation-container">
-        <form class="reservation-info" action="reservation-db.php" method="POST"> 
+        <form class="reservation-info" action="reservation-db.php" method="POST">
             <div class="card a">
                 <img src="Calendar.png" alt="">
                 <div class="icon-info">Reservation Date</div>
@@ -76,11 +76,12 @@
                 </select>
             </div>
             <button type="submit" class="btn btn-reserve" onclick="return choosePaymentMethod()">RESERVE</button>
-        </form> 
+        </form>
     </div>
 
     <script src="../script.js" defer></script>
     <script src="./reservation.js" defer></script>
-     
+
 </body>
+
 </html>
