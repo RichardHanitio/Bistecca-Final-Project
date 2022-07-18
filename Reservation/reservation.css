@@ -1,8 +1,51 @@
 @import url('../global_styles.css');
-@import url("../Navbar//navbar.css");
+@import url("../Navbar/navbar.css");
 
 body{
     background-color: #2B3A41;
+}
+
+.pop-up-container-payment {
+    width : 55vw;
+    height : 60vh;
+}
+
+.pop-up-inner-container-payment {
+    width : 90%;
+    justify-content: space-around;
+}
+
+.pop-up-title-payment{
+    font-size : var(--heading-font-1);
+}
+
+.pop-up-close-notif {
+    margin-top : 30px;
+}
+
+.logo {
+    background-color : white;
+    height : 250px;
+    width : 250px;
+    display : flex;
+    align-items : center;
+    justify-content : center;
+    border-radius : 50%;
+    cursor : pointer;
+}
+
+.logo:hover {
+    border : 8px solid var(--accent-color-1);
+}
+
+.logo img {
+    width : 220px;
+}
+
+.logos {
+    display : flex;
+    width : 90%;
+    justify-content: space-around;
 }
 
 .banner{

@@ -1,0 +1,22 @@
+@import "../global_styles.css";
+
+body {
+    background-color : var(--primary-color);
+}
+
+.notif-title {
+    margin-top : 50px;
+    font-size : var(--hero-font);
+}
+
+.notif-subtitle {
+    margin-top : 30px;
+    text-align : center;
+    font-size : var(--heading-font-3);
+}
+
+.notif-desc {
+    margin-top : 30px;
+    text-align : center;
+    font-size : var(--heading-font-4);
+}

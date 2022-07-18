@@ -1,5 +1,5 @@
 <?php
-require "./library.php";
+require "./lib.php";
 session_start();
 ?>
 

@@ -1,5 +1,5 @@
 <?php 
-    require "../library.php";
+    require "../lib.php";
     require "../db.php";
     $query = "SELECT * FROM user WHERE email=?";
 
@@ -24,3 +24,5 @@
         header("Location: login.php");
     }
 
+
+?>

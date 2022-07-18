@@ -13,4 +13,10 @@
             return mysqli_query($conn, "SELECT * FROM $table WHERE email LIKE '$key'");
         }
     }
+
+    function display_error() {
+        if (isset($_GET["err"])) {
+            echo "<p class='error'>" . $_GET["err"] . "</p>";
+        }
+    }
 ?>

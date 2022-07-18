@@ -1,5 +1,5 @@
 <?php
-    require_once(__DIR__."..\..\library.php");
+    require_once(__DIR__."..\..\lib.php");
     echo '
         <div class="pop-up">
             <div class="pop-up-container">
@@ -9,9 +9,9 @@
                         <path d="m17.25 6.75-10.5 10.5"></path>
                     </svg>
                     <img src="/images/man-grill-steak.png" class="pop-up-img" />
-                    <div class="title pop-up-title">Sign Up to Make Reservations!</div>
-                        <div class="desc pop-up-desc">By signing up, you can make reservations, get daily discount, special menus, and much more!</div>
-                        <input type="button" class="btn pop-up-btn" value="Sign Up Now" onclick="window.location.href=\'/SignUp/signup.php\'"/>
+                    <div class="title pop-up-title">Log In to Make Reservations!</div>
+                        <div class="desc pop-up-desc">By logging in, you can make reservations, get daily discount, special menus, and much more!</div>
+                        <input type="button" class="btn pop-up-btn" value="Log In Now" onclick="window.location.href=\'/Login/login.php\'"/>
                     </div>
                 </div>
             </div>
@@ -28,6 +28,7 @@
                         <li><a href="#">Gallery</a></li>
                         <li><a href="/Locations/location.php">Locations</a></li>
                         <li><a href="/About/about.php">About</a></li>
+                        <li><a href="#">History</a></li>
                     </ul>
                 </div>
                 <div class="navbar-buttons">
@@ -40,7 +41,7 @@
     } else {
         echo '
             <input type="button" value="Reservations" class="btn navbar-reserve-btn" onclick="window.location.href=\'/Reservation/Reservation.php\'"/>
-            <input type="button" value="Logout" class="btn navbar-login-btn" onclick="window.location.href=\'/Logout/logout.php\'"/>
+            <input type="button" value="Logout" class="btn navbar-login-btn" onclick="window.location.href=\'/Notification/notification.php?notif=signout\'"/>
         ';
     }
 

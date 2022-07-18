@@ -1,5 +1,5 @@
 <?php 
-    require "../library.php";
+    require "../lib.php";
     require "../db.php";
     $query = "INSERT INTO user VALUES (?,?,?,?,?)";
     
@@ -20,7 +20,7 @@
             $stmt->bind_param("ssssi", $email, $name, $password, $phone_number, $is_admin);
             $stmt->execute();
             $_SESSION["name"] = $name;
-            header("Location: ./welcome.php");
+            header("Location: ../Notification/notification.php?notif=welcome");
         }
 
     } else {
