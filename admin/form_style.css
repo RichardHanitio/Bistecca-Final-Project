@@ -1,0 +1,46 @@
+@import "../global_styles.css";
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: 0;
+    list-style-type: none;
+}
+
+body{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--accent-color-4);
+}
+
+form{
+    width: 40vw;
+    height: 40vh;
+    padding: 20px;
+    border: #1b252a solid;
+    background-color: var(--accent-color-2);
+}
+
+label{
+    font-size: var(--heading-font-4);
+    color: var(--neutral-color);
+}
+
+input{
+    height: 28px;
+    width: 100%;
+    font-family: var(--body-font-family);
+    padding: 4px;
+}
+
+table{
+    width: 100%;
+    height: 100%;
+}
+
+tr{
+    margin: 8px 0;
+}
