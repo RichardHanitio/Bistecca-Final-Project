@@ -1,0 +1,87 @@
+@import "../global_styles.css";
+
+*{
+    box-sizing: border-box;
+}
+
+
+.navAdmin{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+    background-color: var(--primary-color);
+}
+
+
+aside{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--accent-color-4); 
+    width: 20%;
+    height: auto;
+}
+
+.asi{
+    padding: 28px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 16px;
+    font-size: var(--heading-font-4);
+}
+
+.asi:hover{
+    background-color: var(--accent-color-1);
+}
+.content{
+    display: flex;
+}
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid;
+    background-color: var(--accent-color-3);
+}
+
+table{
+    border-collapse: collapse;
+    width: 80%;
+    color: white;
+}
+
+td, th{
+    border: solid white;
+    padding: 10px 5px;
+    color: white;
+}
+
+.container-side{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 16px 0;
+}
+
+.right{
+    display: flex;
+
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    width : 130px;
+    height : 40px;
+}
+
+#search{
+    width: 320px;
+    padding: 12px 8px;
+}
