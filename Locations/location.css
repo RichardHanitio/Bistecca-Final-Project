@@ -1,151 +1,5 @@
 @import "../global_styles.css";
-
-@import "global_styles.css";
-
-/* pop up */
-.pop-up {
-  position: fixed;
-  height: 100vh;
-  width: 100vw;
-  z-index: 2;
-  display: none;
-}
-
-.pop-up::before {
-  content: "";
-  opacity: 0.7;
-  height: 100%;
-  width: 100%;
-  background-color: black;
-  position: absolute;
-}
-
-.pop-up-container {
-  background-color: var(--primary-color);
-  position: absolute;
-  height: 550px;
-  width: 500px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.pop-up-inner-container {
-  width: 80%;
-  height: 85%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.pop-up-close {
-  align-self: flex-start;
-  cursor: pointer;
-}
-
-.pop-up-img {
-  width: 50%;
-}
-
-.pop-up-title {
-  font-size: var(--heading-font-3);
-  font-weight: 700;
-}
-
-.pop-up-desc {
-  text-align: center;
-}
-
-.pop-up-btn {
-  font-size: var(--body-font);
-  width: 100%;
-}
-
-/* navbar */
-nav {
-  background-color: var(--primary-color);
-  min-height: 80px;
-  position: sticky;
-  top: 0%;
-  z-index: 1;
-  box-shadow: 0 3px 10px var(--accent-color-3);
-}
-
-section {
-  margin-bottom: 120px;
-}
-
-.container {
-  max-width: 1130px;
-  min-height: inherit;
-  margin: 0 auto;
-}
-
-.navbar-container {
-  display: flex;
-  color: white;
-}
-
-.navbar-logo {
-  flex-basis: 10%;
-  display: flex;
-  align-items: center;
-}
-
-.navbar-logo img {
-  width: 60px;
-}
-
-.navbar-links {
-  flex-basis: 75%;
-}
-
-.navbar-links ul {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 100%;
-  width: 80%;
-  margin: 0 auto;
-}
-
-.navbar-links a {
-  font-family: var(--body-font-family);
-  letter-spacing: var(--font-letter-spacing);
-  font-size: var(--body-font-size);
-}
-
-.navbar-buttons {
-  display: flex;
-  flex-basis: 15%;
-  align-items: center;
-  justify-content: center;
-}
-
-.navbar-reserve-btn,
-.navbar-login-btn {
-  font-size: var(--body-font-size);
-  letter-spacing: var(--font-letter-spacing);
-}
-
-.navbar-reserve-btn {
-  margin-right: 20px;
-}
-
-.navbar-login-btn {
-  background: none;
-  border: 1px solid var(--accent-color-1);
-}
-
-.navbar-login-btn:hover {
-  background-color: var(--accent-color-1);
-  border: none;
-}
+@import "../Navbar/navbar.css";
 
 /* main */
 body {
@@ -155,10 +9,28 @@ body {
   background-color: #2b3a41;
 }
 
-.img1 {
+.locations-title {
+  font-size : var(--hero-font);
+  margin-bottom : 20px;
+}
+
+.locations-desc {
+  font-size : var(--heading-font-3);
+}
+
+.img1:before {
+  content : "";
+  position : absolute;
+  display : flex;
   background-image: url(../images/reestaurant-header.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  opacity : .4;
+  width : 100%;
+  height : 100%;
+}
+.img1 {
+  position : relative;
   width: 100%;
   height: 379px;
 }
@@ -166,11 +38,13 @@ body {
 .location > p {
   padding: 50px;
   font-size: var(--heading-font-1);
+  font-weight : 700;
 }
 
 .centered {
   position: relative;
   top: 50%;
+  transform : translateY(-50%);
   text-align: center;
 }
 
@@ -181,11 +55,13 @@ body {
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto;
+  gap : 10px;
 }
 
 .container {
   position: relative;
   width: 100%;
+  cursor : pointer;
 }
 
 .image {
@@ -203,8 +79,8 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
   text-align: center;
+
 }
 
 .container:hover .image {
@@ -218,12 +94,13 @@ body {
 .centered1 {
   position: relative;
   top: 50%;
+  transform : translateY(-50%);
   text-align: center;
 }
 
 .text {
   color: white;
-  font-size: 16px;
+  font-size: var(--heading-font-4);
   padding: 16px 32px;
 }
 
@@ -231,17 +108,16 @@ body {
   text-align: center;
 }
 
+.text1 h2 {
+  font-size : var(--heading-font-1);
+}
+
 .submit-button {
-  height: 40px;
-  width: 150px;
-  color: white;
-  font-weight: bold;
+  height: 50px;
+  width: 200px;
   font-size: 20px;
-  background-color: #bb946e;
-  border: none;
-  margin-top: 10px;
+  margin-top: 30px;
   border-radius: 6px;
-  cursor: pointer;
 }
 
 form {

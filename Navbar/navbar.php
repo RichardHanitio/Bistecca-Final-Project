@@ -1,5 +1,5 @@
 <?php
-    require_once("library.php");
+    require_once(__DIR__."..\..\library.php");
     echo '
         <div class="pop-up">
             <div class="pop-up-container">
@@ -8,7 +8,7 @@
                         <path d="M17.25 17.25 6.75 6.75"></path>
                         <path d="m17.25 6.75-10.5 10.5"></path>
                     </svg>
-                    <img src="./images/man-grill-steak.png" class="pop-up-img" />
+                    <img src="/images/man-grill-steak.png" class="pop-up-img" />
                     <div class="title pop-up-title">Sign Up to Make Reservations!</div>
                         <div class="desc pop-up-desc">By signing up, you can make reservations, get daily discount, special menus, and much more!</div>
                         <input type="button" class="btn pop-up-btn" value="Sign Up Now" onclick="window.location.href=\'/SignUp/signup.php\'"/>

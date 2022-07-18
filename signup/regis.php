@@ -20,7 +20,7 @@
             $stmt->bind_param("ssssi", $email, $name, $password, $phone_number, $is_admin);
             $stmt->execute();
             $_SESSION["name"] = $name;
-            header("Location: ../index.php");
+            header("Location: ./welcome.php");
         }
 
     } else {

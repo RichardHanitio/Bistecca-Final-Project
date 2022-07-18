@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,28 +13,7 @@
     <title>Reservation</title>
 </head>
 <body>
-    <nav>
-        <div class="container navbar-container">
-            <div class="navbar-logo">
-                <img src="/images/bistecca-logo-white.png" />
-            </div>
-            <div class="navbar-links">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Menu</a></li>
-                    <li><a href="#">Gallery</a></li>
-                    <li><a href="#">About</a></li>
-                </ul>
-            </div>
-            <div class="navbar-reserve">
-                <input
-                    type="button"
-                    value="Reservations"
-                    class="btn navbar-reserve-btn"
-                />
-            </div>
-        </div>
-    </nav>
+    <?php require "../Navbar/navbar.php" ?>
     
     <div class="banner">Reservation</div>
     <div class="reservation-container">

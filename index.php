@@ -30,7 +30,7 @@ session_start();
                 ?>
             </h1>
             <div class="header-button">
-                <input type="button" value="Order Now" class="btn header-button-btn" />
+                <input type="button" value="Order Now" class="btn header-button-btn" onclick="window.location.href='./Menu/menu.php'"/>
             </div>
         </div>
     </header>
@@ -134,7 +134,7 @@ session_start();
                     </div>
                 </div>
                 <div class="special-order">
-                    <input type="button" value="Order Now" class="btn special-order-btn" />
+                    <input type="button" value="Order Now" class="btn special-order-btn" onclick="window.location.href='./Menu/menu.php'"/>
                 </div>
             </div>
         </section>

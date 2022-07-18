@@ -1,3 +1,5 @@
+@import "../Navbar/navbar.css";
+
 body {
   background-color: var(--accent-color-2);
 }

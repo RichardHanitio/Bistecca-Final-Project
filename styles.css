@@ -43,7 +43,7 @@ header::before {
 }
 
 .header-desc {
-    font-size : var(--heading-font-4);
+    font-size : var(--heading-font-3);
     margin-top : 20px;
 }
 

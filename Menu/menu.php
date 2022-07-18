@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -12,32 +13,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./menu.css" />
     <link rel="stylesheet" href="../global_styles.css" />
-    <link rel="stylesheet" href="../styles.css" />
     <title>Menu</title>
   </head>
   <body>
-    <nav>
-      <div class="container navbar-container">
-        <div class="navbar-logo">
-          <img src="/images/bistecca-logo-white.png" />
-        </div>
-        <div class="navbar-links">
-          <ul>
-            <li><a href="/index.php">Home</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">Locations</a></li>
-            <li><a href="#">About</a></li>
-          </ul>
-        </div>
-        <div class="navbar-reserve">
-          <input
-            type="button"
-            value="Reservations"
-            class="btn navbar-reserve-btn"
-          />
-        </div>
-      </div>
-    </nav>
+    <?php require "../Navbar/navbar.php" ?>
     <div class="title">
       <span>Special Offer</span>
     </div>

@@ -1,5 +1,5 @@
 @import url('../global_styles.css');
-@import url('../styles.css');
+@import url("../Navbar//navbar.css");
 
 body{
     background-color: #2B3A41;
