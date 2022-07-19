@@ -61,7 +61,7 @@
                                 <p class="menu-title">Tenderloin Stick</p>
                                 <p class="menu-info">Steak with Lorem Ipsum</p>
                                 <div class="card-container-amount">
-                                    <p>Rp.500.000,00</p>
+                                    <p>Rp.600.000,00</p>
                                     <button class="plus-sign">
                                         <span class="icon">+</span>
                                     </button>
