@@ -5,6 +5,13 @@ body{
     background-color: #2B3A41;
 }
 
+.pop-up-payment {
+    width : 100vw;
+    height : 100vh;
+    left : 0;
+    top : 0;
+}
+
 .pop-up-container-payment {
     width : 55vw;
     height : 60vh;

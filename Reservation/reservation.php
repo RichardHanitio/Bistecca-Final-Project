@@ -13,25 +13,7 @@
 </head>
 
 <body>
-    <div class="pop-up pop-up-payment">
-        <div class="pop-up-container pop-up-container-payment" onclick>
-            <svg width="25" height="25" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="pop-up-close pop-up-close-notif">
-                <path d="M17.25 17.25 6.75 6.75"></path>
-                <path d="m17.25 6.75-10.5 10.5"></path>
-            </svg>
-            <div class="pop-up-inner-container pop-up-inner-container-payment">
-                <div class="title pop-up-title pop-up-title-payment">Choose Your Payment Method</div>
-                <div class="logos">
-                    <div class="logo logo-ovo">
-                        <img src="../images/ovo.png" alt="ovo" onclick="window.location.href='../Notification/notification.php?notif=checkout'" />
-                    </div>
-                    <div class="logo logo-bca">
-                        <img src="../images/bca.png" alt="bca" onclick="window.location.href='../Notification/notification.php?notif=checkout'" />
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    
 
     <?php require "../Navbar/navbar.php" ?>
 
@@ -41,12 +23,12 @@
             <div class="card a">
                 <img src="Calendar.png" alt="">
                 <div class="icon-info">Reservation Date</div>
-                <input type="date" name="reservation_date" id="">
+                <input type="date" name="reservation_date" id="" required>
             </div>
             <div class="card b">
                 <img src="Clock.png" alt="">
                 <div class="icon-info">Time</div>
-                <select name="reservation_time" id="">
+                <select name="reservation_time" id="" required>
                     <option value="07:00">07:00</option>
                     <option value="12:30">12:30</option>
                     <option value="17:00">17:00</option>
@@ -57,12 +39,12 @@
             <div class="card c">
                 <img src="Guest.png" alt="">
                 <div class="icon-info">Num of Guest</div>
-                <input type="number" name="reservation_guest" id="">
+                <input type="number" name="reservation_guest" id="" min="1" required>
             </div>
             <div class="card d">
                 <img src="Location.png" alt="">
                 <div class="icon-info">Location</div>
-                <select name="reservation_location" id="">
+                <select name="reservation_location" id="" required>
                     <option value="Italian Greenville">Italian Greenville</option>
                     <option value="Carrolwood">Carrolwood</option>
                     <option value="Coral Springs">Coral Springs</option>
@@ -75,7 +57,27 @@
                     <option value="South Tampa">South Tampa</option>
                 </select>
             </div>
-            <button type="submit" class="btn btn-reserve" onclick="return choosePaymentMethod()">RESERVE</button>
+            <button type="button" class="btn btn-reserve" onclick="choosePaymentMethod()">RESERVE</button>
+            <div class="pop-up pop-up-payment">
+                <div class="pop-up-container pop-up-container-payment" onclick>
+                    <svg width="25" height="25" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="pop-up-close pop-up-close-notif">
+                        <path d="M17.25 17.25 6.75 6.75"></path>
+                        <path d="m17.25 6.75-10.5 10.5"></path>
+                    </svg>
+                    <div class="pop-up-inner-container pop-up-inner-container-payment">
+                        <div class="title pop-up-title pop-up-title-payment">Choose Your Payment Method</div>
+                        <div class="logos">
+                            <button type="submit" class="logo logo-ovo" name="reserve-ovo">
+                                <!-- <img src="../images/ovo.png" alt="ovo" onclick="window.location.href='../Notification/notification.php?notif=checkout'" /> -->
+                                <img src="../images/ovo.png" alt="ovo"  />
+                            </button>
+                            <button type="submit" class="logo logo-bca" name="reserve-bca">
+                                <img src="../images/bca.png" alt="bca" />
+                            </butto>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </form>
     </div>
 

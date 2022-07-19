@@ -21,7 +21,7 @@
         <table>
             <tr>
                 <td><label for="">Email</label></td>
-                <td><input type="text" id="" name="" value="<?= $email ?> disabled"></td>
+                <td><input type="text" id="" name="" value="<?= $email ?>" disabled></td>
             </tr>
             <tr>
                 <td></td>

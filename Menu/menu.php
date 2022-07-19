@@ -1,4 +1,3 @@
-<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -13,7 +12,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="./menu.css" />
         <link rel="stylesheet" href="../global_styles.css" />
-        <title>Menu</title>
+        <title>Bistecca | Menu</title>
     </head>
     <body>
         <?php require "../Navbar/navbar.php" ?>
@@ -21,6 +20,81 @@
             <span>Special Offer</span>
         </div>
         <div class="image-container">
+            <div class="card-container">
+                <div class="picture">
+                    <img src="../images/tenderloin.png" alt="tenderloin" />
+                </div>
+                <div class="card-container-info">
+                    <p class="menu-title">Tenderloin Stick</p>
+                    <p class="menu-info">Steak with Lorem Ipsum</p>
+                    <div class="card-container-amount">
+                        <p>Rp.500.000,00</p>
+                        <button class="plus-sign">
+                            <span class="icon">+</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="picture">
+                    <img src="../images/tenderloin.png" alt="tenderloin" />
+                </div>
+                <div class="card-container-info">
+                    <p class="menu-title">Tenderloin Stick</p>
+                    <p class="menu-info">Steak with Lorem Ipsum</p>
+                    <div class="card-container-amount">
+                        <p>Rp.500.000,00</p>
+                        <button class="plus-sign">
+                            <span class="icon">+</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="picture">
+                    <img src="../images/tenderloin.png" alt="tenderloin" />
+                </div>
+                <div class="card-container-info">
+                    <p class="menu-title">Tenderloin Stick</p>
+                    <p class="menu-info">Steak with Lorem Ipsum</p>
+                    <div class="card-container-amount">
+                        <p>Rp.500.000,00</p>
+                        <button class="plus-sign">
+                            <span class="icon">+</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="picture">
+                    <img src="../images/tenderloin.png" alt="tenderloin" />
+                </div>
+                <div class="card-container-info">
+                    <p class="menu-title">Tenderloin Stick</p>
+                    <p class="menu-info">Steak with Lorem Ipsum</p>
+                    <div class="card-container-amount">
+                        <p>Rp.500.000,00</p>
+                        <button class="plus-sign">
+                            <span class="icon">+</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="picture">
+                    <img src="../images/tenderloin.png" alt="tenderloin" />
+                </div>
+                <div class="card-container-info">
+                    <p class="menu-title">Tenderloin Stick</p>
+                    <p class="menu-info">Steak with Lorem Ipsum</p>
+                    <div class="card-container-amount">
+                        <p>Rp.500.000,00</p>
+                        <button class="plus-sign">
+                            <span class="icon">+</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
             <div class="card-container">
                 <div class="picture">
                     <img src="../images/tenderloin.png" alt="tenderloin" />

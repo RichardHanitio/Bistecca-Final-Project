@@ -52,7 +52,9 @@
                             <th>edit</th>
                         </tr>
                         
-                        <?php $table = selectTableUser("user", $_GET['keyword']);  while($row = mysqli_fetch_array($table)) { ?>
+                        <?php 
+                            $table = selectTableUser("user", $_GET['keyword']);  
+                            while($row = mysqli_fetch_array($table)) { ?>
                             <tr>
                                 <td><?= $row[0] ?></td>
                                 <td><?= $row[1] ?></td>

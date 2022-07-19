@@ -134,7 +134,7 @@ define ('PDF_MARGIN_FOOTER', 20);
 /**
  * Top margin.
  */
-define ('PDF_MARGIN_TOP', 25);
+define ('PDF_MARGIN_TOP', 35);
 
 /**
  * Bottom margin.
@@ -159,7 +159,7 @@ define ('PDF_FONT_NAME_MAIN', 'helvetica');
 /**
  * Default main font size.
  */
-define ('PDF_FONT_SIZE_MAIN', 25);
+define ('PDF_FONT_SIZE_MAIN', 20);
 
 /**
  * Default data font name.

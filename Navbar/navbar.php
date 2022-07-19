@@ -28,7 +28,6 @@
                         <li><a href="#">Gallery</a></li>
                         <li><a href="/Locations/location.php">Locations</a></li>
                         <li><a href="/About/about.php">About</a></li>
-                        <li><a href="#">History</a></li>
                     </ul>
                 </div>
                 <div class="navbar-buttons">
