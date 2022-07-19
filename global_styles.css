@@ -60,17 +60,6 @@ a {
     font-weight: 500;
 }
 
-section {
-    margin-bottom : 120px;
-}
-
-.container {
-    max-width: 1130px;
-    min-height: inherit;
-    margin: 0 auto;
-}
-
-
 .btn {
     background-color: var(--accent-color-1);
     border: none;

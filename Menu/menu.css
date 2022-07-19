@@ -3,16 +3,6 @@
 body {
     background-color: var(--accent-color-2);
 }
-
-.menu-container {
-    min-width : 1400px;
-}
-
-.menu-main-title {
-    margin : 50px 0;
-}
-
-
 .card-container {
     background-color: var(--accent-color-3);
     width: 416px;

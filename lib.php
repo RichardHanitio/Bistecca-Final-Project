@@ -2,7 +2,7 @@
     require_once "db.php";
 
     function is_logged_in() {
-        return isset($_SESSION["email"]);
+        return isset($_SESSION["name"]);
     }
 
     function display_error() {

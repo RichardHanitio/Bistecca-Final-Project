@@ -20,7 +20,6 @@
             $stmt->bind_param("ssssi", $email, $name, $password, $phone_number, $is_admin);
             $stmt->execute();
             $_SESSION["name"] = $name;
-            $_SESSION["email"] = $email;
             header("Location: ../Notification/notification.php?notif=welcome");
         }
 
