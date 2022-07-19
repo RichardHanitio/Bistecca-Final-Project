@@ -1,5 +1,5 @@
 <?php 
-    require_once "../../library.php";
+    require_once "../../lib.php";
     require_once "../../db.php";
 
     $qry = mysqli_query($conn, "SELECT id_menu FROM menu");

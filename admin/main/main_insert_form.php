@@ -1,5 +1,5 @@
 <?php 
-    require_once "../../library.php";
+    require_once "../../lib.php";
     require_once "../../db.php";
 
     $qryEmail = mysqli_query($conn, "SELECT email FROM user");

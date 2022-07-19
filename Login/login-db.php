@@ -13,10 +13,15 @@
 
         $res = $stmt->get_result()->fetch_assoc();
 
-        if(!empty($res)){
+        if(!empty($res) && $res['is_admin'] == 0){
             $_SESSION["name"] = $res["name"];
             header("Location: ../index.php");
-        } else {
+        } 
+        else if(!empty($res) && $res['is_admin'] == 1){
+            $_SESSION["name"] = $res["name"];
+            header("Location: ../admin/adminPanel.php");
+        }
+        else {
             header("Location: ./login.php?err=Wrong email or password");
         }
 

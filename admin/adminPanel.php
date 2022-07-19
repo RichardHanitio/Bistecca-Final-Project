@@ -1,5 +1,5 @@
 <?php 
-    require_once "../library.php";
+    require_once "../lib.php";
     require_once "../db.php";
     $_SESSION['isAdmin'] = true;
     if(!isset($_GET['keyword'])) $_GET['keyword'] = null;
@@ -20,7 +20,7 @@
 
         <div class="navAdmin">
             <div class="blank"></div>
-            <a href="logoutAdmin.php">LOGOUT</a>
+            <a href="adminLogout.php">LOGOUT</a>
         </div>
         <div class="content">
             <aside>
