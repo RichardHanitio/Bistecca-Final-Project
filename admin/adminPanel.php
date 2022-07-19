@@ -20,7 +20,7 @@
 
         <div class="navAdmin">
             <div class="blank"></div>
-            <a href="logoutAdmin.php">LOGOUT</a>
+            <a href="adminLogout.php">LOGOUT</a>
         </div>
         <div class="content">
             <aside>
