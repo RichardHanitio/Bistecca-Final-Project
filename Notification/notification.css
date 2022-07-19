@@ -20,3 +20,10 @@ body {
     text-align : center;
     font-size : var(--heading-font-4);
 }
+
+.pdf-container {
+    width : 70vw;
+    height : 120vh;
+    background-color : var(--accent-color-2);
+    margin : 50px auto;
+}

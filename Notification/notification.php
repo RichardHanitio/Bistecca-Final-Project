@@ -21,7 +21,10 @@
             if($_GET["notif"]=="checkout") {
                 echo "<h1 class='title notif-title'>Thankyou, ".$_SESSION["name"]." 🙏</h1>";
                 echo "<p class='subtitle notif-subtitle'>For making a reservation in Bistecca. We hope you can enjoy the hospitality here in Bistecca,<br> looking forward to seeing you here 🥰 </p>";
-                echo "<p class='desc notif-desc'>Here is your reservation bill. You can download it here 👇</p>";
+                echo "<p class='desc notif-desc'>Here is your reservation receipt. You can download it here 👇</p>";
+                echo "<div class='pdf-container'>";
+                echo "<iframe src='../Reservation/reservation-receipt.php' style='width:100%; height:100%;' frameborder='0'></iframe>";
+                echo "</div>";
                 // echo "<p class='desc welcome-desc'>Click <a href='../index.php' class='link'>here</a> to go to homepage</p>"
             }
             else if($_GET["notif"]=="welcome") {
