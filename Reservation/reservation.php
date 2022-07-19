@@ -59,8 +59,8 @@
             </div>
             <button type="button" class="btn btn-reserve" onclick="choosePaymentMethod()">RESERVE</button>
             <div class="pop-up pop-up-payment">
-                <div class="pop-up-container pop-up-container-payment" onclick>
-                    <svg width="25" height="25" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="pop-up-close pop-up-close-notif">
+                <div class="pop-up-container pop-up-container-payment">
+                    <svg width="25" height="25" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="pop-up-close pop-up-close-payment" onclick="closePaymentPopUp()">
                         <path d="M17.25 17.25 6.75 6.75"></path>
                         <path d="m17.25 6.75-10.5 10.5"></path>
                     </svg>

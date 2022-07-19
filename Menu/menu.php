@@ -16,116 +16,103 @@
     </head>
     <body>
         <?php require "../Navbar/navbar.php" ?>
-        <div class="title">
-            <span>Special Offer</span>
-        </div>
-        <div class="image-container">
-            <div class="card-container">
-                <div class="picture">
-                    <img src="../images/tenderloin.png" alt="tenderloin" />
-                </div>
-                <div class="card-container-info">
-                    <p class="menu-title">Tenderloin Stick</p>
-                    <p class="menu-info">Steak with Lorem Ipsum</p>
-                    <div class="card-container-amount">
-                        <p>Rp.500.000,00</p>
-                        <button class="plus-sign">
-                            <span class="icon">+</span>
-                        </button>
+        <main>
+            <section>
+                <div class="container menu-container">
+                    <div class="title menu-main-title">
+                        <span>Special Offer</span>
+                    </div>
+                    <div class="image-container">
+                        <div class="card-container">
+                            <div class="picture">
+                                <img src="../images/tenderloin.png" alt="tenderloin" />
+                            </div>
+                            <div class="card-container-info">
+                                <p class="menu-title">Tenderloin Stick</p>
+                                <p class="menu-info">Steak with Lorem Ipsum</p>
+                                <div class="card-container-amount">
+                                    <p>Rp.500.000,00</p>
+                                    <button class="plus-sign">
+                                        <span class="icon">+</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-container">
+                            <div class="picture">
+                                <img src="../images/tenderloin.png" alt="tenderloin" />
+                            </div>
+                            <div class="card-container-info">
+                                <p class="menu-title">Tenderloin Stick</p>
+                                <p class="menu-info">Steak with Lorem Ipsum</p>
+                                <div class="card-container-amount">
+                                    <p>Rp.500.000,00</p>
+                                    <button class="plus-sign">
+                                        <span class="icon">+</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-container">
+                            <div class="picture">
+                                <img src="../images/tenderloin.png" alt="tenderloin" />
+                            </div>
+                            <div class="card-container-info">
+                                <p class="menu-title">Tenderloin Stick</p>
+                                <p class="menu-info">Steak with Lorem Ipsum</p>
+                                <div class="card-container-amount">
+                                    <p>Rp.500.000,00</p>
+                                    <button class="plus-sign">
+                                        <span class="icon">+</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>     
+                        
                     </div>
                 </div>
-            </div>
-            <div class="card-container">
-                <div class="picture">
-                    <img src="../images/tenderloin.png" alt="tenderloin" />
-                </div>
-                <div class="card-container-info">
-                    <p class="menu-title">Tenderloin Stick</p>
-                    <p class="menu-info">Steak with Lorem Ipsum</p>
-                    <div class="card-container-amount">
-                        <p>Rp.500.000,00</p>
-                        <button class="plus-sign">
-                            <span class="icon">+</span>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="card-container">
-                <div class="picture">
-                    <img src="../images/tenderloin.png" alt="tenderloin" />
-                </div>
-                <div class="card-container-info">
-                    <p class="menu-title">Tenderloin Stick</p>
-                    <p class="menu-info">Steak with Lorem Ipsum</p>
-                    <div class="card-container-amount">
-                        <p>Rp.500.000,00</p>
-                        <button class="plus-sign">
-                            <span class="icon">+</span>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="card-container">
-                <div class="picture">
-                    <img src="../images/tenderloin.png" alt="tenderloin" />
-                </div>
-                <div class="card-container-info">
-                    <p class="menu-title">Tenderloin Stick</p>
-                    <p class="menu-info">Steak with Lorem Ipsum</p>
-                    <div class="card-container-amount">
-                        <p>Rp.500.000,00</p>
-                        <button class="plus-sign">
-                            <span class="icon">+</span>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="card-container">
-                <div class="picture">
-                    <img src="../images/tenderloin.png" alt="tenderloin" />
-                </div>
-                <div class="card-container-info">
-                    <p class="menu-title">Tenderloin Stick</p>
-                    <p class="menu-info">Steak with Lorem Ipsum</p>
-                    <div class="card-container-amount">
-                        <p>Rp.500.000,00</p>
-                        <button class="plus-sign">
-                            <span class="icon">+</span>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="card-container">
-                <div class="picture">
-                    <img src="../images/tenderloin.png" alt="tenderloin" />
-                </div>
-                <div class="card-container-info">
-                    <p class="menu-title">Tenderloin Stick</p>
-                    <p class="menu-info">Steak with Lorem Ipsum</p>
-                    <div class="card-container-amount">
-                        <p>Rp.500.000,00</p>
-                        <button class="plus-sign">
-                            <span class="icon">+</span>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
+            </section>
 
-        <div class="title">
-            <span>Steak</span>
-        </div>
-        <div class="title">
-            <span>Spaghetti</span>
-        </div>
-        <div class="title">
-            <span>Snack</span>
-        </div>
-        <div class="title">
-            <span>Tea</span>
-        </div>
-        <div class="title">
-            <span>Coffee</span>
-        </div>
+            <section>
+                <div class="container menu-container">
+                    <div class="title">
+                        <span>Steak</span>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="container menu-container">
+                    <div class="title">
+                        <span>Spaghetti</span>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="container menu-container">
+                    <div class="title">
+                        <span>Snack</span>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="container menu-container">
+                    <div class="title">
+                        <span>Tea</span>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="container menu-container">
+                    <div class="title">
+                        <span>Coffee</span>
+                    </div>
+                </div>
+            </section>
+
+        </main>
     </body>
 </html>

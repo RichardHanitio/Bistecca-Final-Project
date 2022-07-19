@@ -1,8 +1,9 @@
 <?php
+    session_start();
     require_once("../db.php");
     require_once("../public/TCPDF-main/tcpdf.php");
     
-    function fetchDataById() {
+    function fetchReservationById() {
         global $conn;
         $id = $_GET["reservationid"];
         $query = mysqli_query($conn, "SELECT * FROM reservation WHERE id_reservation='".$id."'");
@@ -14,6 +15,21 @@
             <tr><td>Time</td><td>:</td><td>'.$row["time"].'</td></tr>
             <tr><td>Location</td><td>:</td><td>'.$row["location"].'</td></tr>
             <tr><td>Guest</td><td>:</td><td>'.$row["guest"].'</td></tr>
+        ';
+
+        return $output;
+    }
+
+    function fetchUserByEmail() {
+        global $conn;
+        $email = $_SESSION["email"];
+        $query = mysqli_query($conn, "SELECT * FROM user WHERE email='".$email."'");
+        $row = mysqli_fetch_assoc($query);
+
+        $output = '
+            <tr><td>Email</td><td width="20">:</td><td>'.$row["email"].'</td></tr>
+            <tr><td>Name</td><td>:</td><td>'.$row["name"].'</td></tr>
+            <tr><td>Phone Number</td><td>:</td><td>'.$row["phone_num"].'</td></tr>
         ';
 
         return $output;
@@ -40,10 +56,36 @@
 
     $html = '';
 
-    $html .= "<h1>Summary</h1>";
+    $html .= "<h2>User Details</h2>";
     $html .= '<table>';
-    $html .= fetchDataById();
+    $html .= fetchUserByEmail();
     $html .= "</table>";
+
+    $html .="<br>";
+
+    $html .= "<h2>Reservation Details</h2>";
+    $html .= '<table>';
+    $html .= fetchReservationById();
+    $html .= "</table>";
+
+    $html .="<br>";
+    
+    $html .= "<h2>------------------------------------ Menu Ordered ------------------------------------</h2>";
+    $html .= '<table>';
+    $html .= fetchReservationById();
+    $html .= "</table>";
+    $html .= "<h2>------------------------------------ Check Closed ------------------------------------</h2>";
+    
+    $html .="<br>";
+    
+    $html .="<p style=\"text-align:center;\">";
+    $html .= date("Y-m-d H:i:s");
+    $html .="</p>";
+    
+    $html .="<br>";
+    
+    $html .= "<p style=\"text-align:center;\">All Price are inclusive Tax</p>";
+    $html .= "<p style=\"text-align:center;\">Jl. Letjen S Parman No. 58, Petisah Tengah, Kec. Medan Petisah, Kota Medan, Sumatera Utara 20111</p>";
 
 
     // $html = <<<EOD

@@ -15,10 +15,12 @@
 
         if(!empty($res) && $res['is_admin'] == 0){
             $_SESSION["name"] = $res["name"];
+            $_SESSION["email"] = $res["email"];
             header("Location: ../index.php");
         } 
         else if(!empty($res) && $res['is_admin'] == 1){
             $_SESSION["name"] = $res["name"];
+            $_SESSION["email"] = $res["email"];
             header("Location: ../admin/adminPanel.php");
         }
         else {

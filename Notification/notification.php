@@ -26,17 +26,15 @@
                 echo "<div class='pdf-container'>";
                 echo "<iframe src='".$link."' style='width:100%; height:100%;' frameborder='0'></iframe>";
                 echo "</div>";
-                // echo "<p class='desc welcome-desc'>Click <a href='../index.php' class='link'>here</a> to go to homepage</p>"
             }
             else if($_GET["notif"]=="welcome") {
                 echo "<h1 class='title notif-title'>Welcome, ".$_SESSION["name"]." 👋</h1>";
                 echo "<p class='subtitle notif-subtitle'>Thankyou for signing up to Bistecca. By signing up, you can now make reservations, and get tons of discounts every week 😁</p>";
-                echo "<p class='desc notif-desc'>Click <a href='../index.php' class='link'>here</a> to go to homepage</p>";
             }
             else if($_GET["notif"]=="signout") {
                 echo "<h1 class='title notif-title'>You have logged out</h1>";
-                echo "<p class='desc notif-desc '>Click <a href='../index.php' class='link'>here</a> to go to homepage</p>";
             }
+            echo "<p class='desc notif-desc '>Click <a href='../index.php' class='link'>here</a> to go to homepage</p>";
 
         ?>
     </body>  
